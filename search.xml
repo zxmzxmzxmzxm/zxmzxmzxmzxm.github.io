@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端资源总结]]></title>
+    <url>%2F2019%2F08%2F24%2Fstudy%2F</url>
+    <content type="text"><![CDATA[想要把我将近两年工作中总结的一些资源放上来，简单做了一下分类 ###CSS相关 css写icon 物流信息的样式 移动端长按复制文本 rn样式1 rn样式2 css禁止鼠标点击 博客样式 自定义轮播点的样式###JS相关 js基础 压缩图片上传 超文本传输协议 图灵社区 打断点 mootools mootools 返回上一页浏览位置 前端优化 前端笔记 正则表达式 手机号隐藏中间四位###小程序 小程序点赞 小程序图片懒加载 小程序图片懒加载 关于小程序版本更新问题 小程序UI组件库 小程序UI组件库###Vue vue项目 vue安装步骤 vue检测滚动条 全局注册组件 页面传参 引公共头尾 页面传参 vue滑块验证 vue滑块验证###ReactNative RN1 RN2 rn 注册通知监听###union 关于unionid的问题###面试 前端面试 部分答案 前端面试 前端面试 前端面试 前端面试 前端技巧 ###资料以下资料有需要可以看看: 开课吧WEB全栈公开课：https://pan.baidu.com/s/1UdtfzNK3ZN7cDobROHd7Uw，提取码：oil4 前端电子书：链接:https://pan.baidu.com/s/1BcX3huBbrADbSoXOdKLHog 密码:b6mr 珠峰公开课1.最通俗易懂的MVVM原理链接：https://pan.baidu.com/s/1FidCaXdgO4JX-7dxOhPj3Q提取码：ibbv2.vue之封装自己的树组件链接：https://pan.baidu.com/s/1KggzanfhJpkeaED8Ju2O4w提取码：x2qs3.Vue单元测试最佳实践链接：https://pan.baidu.com/s/1Fh0TJTMOxhuKteCamKC9MA提取码：x0hh4.vue之封装自己的日历组件-高级篇链接：https://pan.baidu.com/s/1bwwjaboe11M78LPX4HaD2w提取码：j4dp5.从零实现React链接：https://pan.baidu.com/s/12EGxmIlJE42KBbZF4CAYdA提取码：hylw6.jenkin持续集成链接：https://pan.baidu.com/s/16GBPbUo71RsroughN-AuhQ提取码：t4ht7.从零实现KOA链接：https://pan.baidu.com/s/1jamrcQ-7aUYHQ63iSSHGTA提取码：1txi]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>资源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git切换仓库地址]]></title>
     <url>%2F2019%2F08%2F23%2Fhuawei-1%2F</url>
     <content type="text"><![CDATA[当我们的git仓库地址被更换后，我们需要操作什么呢，我以华为云和windows操作系统为例，来解释一下。小白进阶为大神就是这样一步步来的~1.git仓库的地址与windows凭据有一定的关系（系统的凭据管理器其实就是一个系统组件，能够帮助完成本地访问时的认证工作。当用户第一次输入用户名和密码的时候，凭证管理器可以将这些访问凭据(用户、密码、证书等)保存在本地，再次访问该服务器站点时，系统会自动完成凭据的认证过程。）2.在命令提示符中输入 123git remote remove origingit remote add origin urlgit remote -v 移除旧的仓库，切换新的仓库,确认现在的仓库地址3.要在windows凭据中把原来的相关的都删掉，这个很重要，要不没法操作现在的仓库4.在操作现有仓库的时候会有弹窗重新认证，按照账户名/用户名，密码的格式输入就好了。5.完成]]></content>
