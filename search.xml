@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vue前台重组数据]]></title>
+    <url>%2F2019%2F08%2F29%2FvueMap%2F</url>
+    <content type="text"><![CDATA[###有时候由于数据库的原因，我们的后端并不那么智能，所以有些东西需要前端来做一些处理，例如重组数据，今天遇到一个用vue重组数据的案例后端返回的数据类似这样 1srting: '1,2,3' 但是前端需要的是这样的我们需要将后端返回的数字转换为相对应的文字 1234567891011created() &#123; var arr = this.imgType.split(',') console.log(arr) arr.map((item, i) =&gt; &#123; var obj = &#123;&#125; obj.num = item obj.text = item === "1" ? '缺血性硬化':item === "2" ? '弥漫性增厚':item === "3" ? '空泡变性':item === "4" ? '钉突':item === "5" ? '链环' : '钉突' this.final.push(obj) console.log(this.final) &#125;) &#125; 打印输出的结果填充数据 123&lt;div class="result"&gt; &lt;span v-for="( item ,i ) in final " :key="i"&gt;&#123;&#123;item.text&#125;&#125;&lt;/span&gt;&lt;/div&gt; 这样就可以了~其实这里就是给拿到的数据转换为数组，在数组中挨个进行对应判断，用map进行遍历，存在的数据会重新push进一个新的数组，在html中遍历新的数组就好。这是我目前想到的办法，如果后续有更方便的就继续更新。]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[前端资源总结]]></title>
     <url>%2F2019%2F08%2F24%2Fstudy%2F</url>
     <content type="text"><![CDATA[想要把我将近两年工作中总结的一些资源放上来，简单做了一下分类 ###CSS相关 css写icon 物流信息的样式 移动端长按复制文本 rn样式1 rn样式2 css禁止鼠标点击 博客样式 自定义轮播点的样式###JS相关 js基础 压缩图片上传 超文本传输协议 图灵社区 打断点 mootools mootools 返回上一页浏览位置 前端优化 前端笔记 正则表达式 手机号隐藏中间四位###小程序 小程序点赞 小程序图片懒加载 小程序图片懒加载 关于小程序版本更新问题 小程序UI组件库 小程序UI组件库###Vue vue项目 vue安装步骤 vue检测滚动条 全局注册组件 页面传参 引公共头尾 页面传参 vue滑块验证 vue滑块验证###ReactNative RN1 RN2 rn 注册通知监听###union 关于unionid的问题###面试 前端面试 部分答案 前端面试 前端面试 前端面试 前端面试 前端技巧 ###资料以下资料有需要可以看看: 开课吧WEB全栈公开课：https://pan.baidu.com/s/1UdtfzNK3ZN7cDobROHd7Uw，提取码：oil4 前端电子书：链接:https://pan.baidu.com/s/1BcX3huBbrADbSoXOdKLHog 密码:b6mr 珠峰公开课1.最通俗易懂的MVVM原理链接：https://pan.baidu.com/s/1FidCaXdgO4JX-7dxOhPj3Q提取码：ibbv2.vue之封装自己的树组件链接：https://pan.baidu.com/s/1KggzanfhJpkeaED8Ju2O4w提取码：x2qs3.Vue单元测试最佳实践链接：https://pan.baidu.com/s/1Fh0TJTMOxhuKteCamKC9MA提取码：x0hh4.vue之封装自己的日历组件-高级篇链接：https://pan.baidu.com/s/1bwwjaboe11M78LPX4HaD2w提取码：j4dp5.从零实现React链接：https://pan.baidu.com/s/12EGxmIlJE42KBbZF4CAYdA提取码：hylw6.jenkin持续集成链接：https://pan.baidu.com/s/16GBPbUo71RsroughN-AuhQ提取码：t4ht7.从零实现KOA链接：https://pan.baidu.com/s/1jamrcQ-7aUYHQ63iSSHGTA提取码：1txi]]></content>
