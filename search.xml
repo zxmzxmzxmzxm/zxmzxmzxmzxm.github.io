@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[includes和indexOf]]></title>
+    <url>%2F2019%2F12%2F19%2Fincludes%E5%92%8CindexOf%2F</url>
+    <content type="text"><![CDATA[工作中总是用到判断某个数组中是否存在某个数据，今天终于搞明白了！！！ ###示例对比 123var arr=[1,2,3]console.log(arr.includes(2)) //trueconsole.log(arr.indexOf(2)) //1 123var arr=[1,2,3,NaN]console.log(arr.includes(NaN)) //trueconsole.log(arr.indexOf(NaN)) //-1 这个示例说明includes输出的是布尔值，indexOf输出的是当前数据所在的数组中的位置，也就是索引。 ###对比总结 它们都采用”===”操作符作比较 它们对NaN的处理结果不同 includes返回的是布尔值，但是indexOf返回的是索引值。所以如果就是为了判断存在与否只用includes，如果需要知道位置就只能用indexOf,因为indexOf判断是位置，所以如果判断存在与否就判断是否大于-1即可。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[vue前台重组数据]]></title>
     <url>%2F2019%2F08%2F29%2FvueMap%2F</url>
     <content type="text"><![CDATA[###有时候由于数据库的原因，我们的后端并不那么智能，所以有些东西需要前端来做一些处理，例如重组数据，今天遇到一个用vue重组数据的案例后端返回的数据类似这样 1srting: '1,2,3' 但是前端需要的是这样的我们需要将后端返回的数字转换为相对应的文字 1234567891011created() &#123; var arr = this.imgType.split(',') console.log(arr) arr.map((item, i) =&gt; &#123; var obj = &#123;&#125; obj.num = item obj.text = item === "1" ? '缺血性硬化':item === "2" ? '弥漫性增厚':item === "3" ? '空泡变性':item === "4" ? '钉突':item === "5" ? '链环' : '钉突' this.final.push(obj) console.log(this.final) &#125;) &#125; 打印输出的结果填充数据 123&lt;div class="result"&gt; &lt;span v-for="( item ,i ) in final " :key="i"&gt;&#123;&#123;item.text&#125;&#125;&lt;/span&gt;&lt;/div&gt; 这样就可以了~其实这里就是给拿到的数据转换为数组，在数组中挨个进行对应判断，用map进行遍历，存在的数据会重新push进一个新的数组，在html中遍历新的数组就好。这是我目前想到的办法，如果后续有更方便的就继续更新。]]></content>

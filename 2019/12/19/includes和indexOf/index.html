@@ -56,18 +56,18 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="工作中总是用到判断某个数组中是否存在某个数据，今天终于搞明白了！！！ ###示例对比 123var arr=[1,2,3]console.log(arr.includes(2))   //trueconsole.log(arr.indexOf(2))    //1  123var arr=[1,2,3,NaN]console.log(arr.includes(NaN))   //trueconso">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://zxmzxmzxmzxm.github.io/2019/08/23/hello-world/index.html">
+<meta property="og:title" content="includes和indexOf">
+<meta property="og:url" content="https://zxmzxmzxmzxm.github.io/2019/12/19/includes和indexOf/index.html">
 <meta property="og:site_name" content="张小美的blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="工作中总是用到判断某个数组中是否存在某个数据，今天终于搞明白了！！！ ###示例对比 123var arr=[1,2,3]console.log(arr.includes(2))   //trueconsole.log(arr.indexOf(2))    //1  123var arr=[1,2,3,NaN]console.log(arr.includes(NaN))   //trueconso">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-23T03:13:17.533Z">
+<meta property="og:updated_time" content="2019-12-19T02:24:01.311Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-  <link rel="canonical" href="https://zxmzxmzxmzxm.github.io/2019/08/23/hello-world/">
+<meta name="twitter:title" content="includes和indexOf">
+<meta name="twitter:description" content="工作中总是用到判断某个数组中是否存在某个数据，今天终于搞明白了！！！ ###示例对比 123var arr=[1,2,3]console.log(arr.includes(2))   //trueconsole.log(arr.indexOf(2))    //1  123var arr=[1,2,3,NaN]console.log(arr.includes(NaN))   //trueconso">
+  <link rel="canonical" href="https://zxmzxmzxmzxm.github.io/2019/12/19/includes和indexOf/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>Hello World | 张小美的blog</title>
+  <title>includes和indexOf | 张小美的blog</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zxmzxmzxmzxm.github.io/2019/08/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://zxmzxmzxmzxm.github.io/2019/12/19/includes和indexOf/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张小美">
@@ -279,7 +279,7 @@
       <meta itemprop="name" content="张小美的blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">includes和indexOf
 
           
         </h1>
@@ -295,8 +295,12 @@
                 
               
 
-              <time title="创建时间：2019-08-23 11:13:17" itemprop="dateCreated datePublished" datetime="2019-08-23T11:13:17+08:00">2019-08-23</time>
+              <time title="创建时间：2019-12-19 09:43:51 / 修改时间：10:24:01" itemprop="dateCreated datePublished" datetime="2019-12-19T09:43:51+08:00">2019-12-19</time>
             </span>
+          
+            
+
+            
           
 
           
@@ -310,19 +314,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>工作中总是用到判断某个数组中是否存在某个数据，今天终于搞明白了！！！</p>
+<p>###示例对比</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3]</span><br><span class="line">console.log(arr.includes(2))   //<span class="literal">true</span></span><br><span class="line">console.log(arr.indexOf(2))    //1</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr=[1,2,3,NaN]</span><br><span class="line">console.log(arr.includes(NaN))   //<span class="literal">true</span></span><br><span class="line">console.log(arr.indexOf(NaN))    //-1</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>这个示例说明includes输出的是布尔值，indexOf输出的是当前数据所在的数组中的位置，也就是索引。</p>
+<p>###对比总结</p>
+<ol>
+<li>它们都采用”===”操作符作比较</li>
+<li>它们对NaN的处理结果不同</li>
+<li>includes返回的是布尔值，但是indexOf返回的是索引值。所以如果就是为了判断存在与否只用includes，如果需要知道位置就只能用indexOf,因为indexOf判断是位置，所以如果判断存在与否就判断是否大于-1即可。</li>
+</ol>
 
     </div>
 
@@ -351,15 +355,15 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
+                <a href="/2019/08/29/vueMap/" rel="next" title="vue前台重组数据">
+                  <i class="fa fa-chevron-left"></i> vue前台重组数据
+                </a>
+              
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/08/23/huawei-1/" rel="prev" title="git切换仓库地址">
-                  git切换仓库地址 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -408,10 +412,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc">
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-          </div>
-        
       </div>
       <!--/noindex-->
 
@@ -426,8 +426,29 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
         </a>
       </div>
     
@@ -439,7 +460,13 @@
         
           
         
-        <span class="site-state-item-count">1</span>
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         
       </div>
